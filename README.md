@@ -12,7 +12,7 @@ This repository gives us a chance to practice using git and virtual environments
 
 ![Screenshot showing code button and URL to copy](assets/code_button.png)
 
-3. Open a terminal on yor computer, and navigate to the directory where you wish to copy this exercise's code to. Once you are in the desired directory, run this command, using the URL you copied in the previous step: 
+3. Open a terminal on your computer, and navigate to the directory where you wish to copy this exercise's code to. Once you are in the desired directory, run this command, using the URL you copied in the previous step: 
 
 ```git clone YOUR_REPO_URL```
 
@@ -24,7 +24,7 @@ This repository gives us a chance to practice using git and virtual environments
 
 5. The AdaSay project requires the cowsay package to run. We want to install this dependency in a virtual environment so that it is used only for this project. We first run the following command to create a virtaul environment:
 
-```python -m venv venv```
+```python3 -m venv venv```
 
 6. This will create a new folder named `venv` which will hold all the information about our virtual environment. Verify that this folder was created by running `ls` and seeing that `venv` is one of the folders present.
 
