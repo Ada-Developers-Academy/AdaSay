@@ -20,6 +20,24 @@ This repository gives us a chance to practice using git and virtual environments
 
 ```cd AdaSay```
 
-5. Open the code in VS Code.
+## Create a Virtual Environment and Install Dependencies
 
-```code .```
+1. The AdaSay project requires the cowsay package to run. We want to install this dependency in a virtual environment so that it is used only for this project. We first run the following command to create a virtaul environment:
+
+```python -m venv venv```
+
+2. This will create a new folder named `venv` which will hold all the information about our virtual environment. Verify that this folder was created by running `ls` and seeing that `venv` is one of the folders present.
+
+3. We now need to activate the virtual environment. Everything else up to this point was one-time setup, but we will need to repeat this step each time we open a new terminal to interact with this project. We activate the virtual environment by running the activation script in the `venv` folder.
+
+```source venv/bin/activate```
+
+4. Verify that the virtual environment has been activated. If `(venv)` appears at the front of your shell prompt, you have successfully activated the environment.
+
+5. Next, we want to install all the requirements. This projects specifies the what packages it needs in the `requirements.txt` file. We use pip to read this file and install the needed dependencies:
+
+```pip install -r requirements.txt```
+
+6. Now that the requirements are installed, we're ready to try running our program. Run the following command (in a terminal that has the virtual environment activated) and see if we get a cow outputted:
+
+```python main.py```
